@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <title>Next Bus</title>
+    <script type="text/javascript" src="timetable.js"></script>
+
+
+</head>
+
+<body onLoad="startClock()">
+    <div id="clock_frame" style="color: #00ff00; background-color: black; font-family : Courier,'ＭＳ Ｐゴシック',monospace ;">
+    <br >
+    　現在時刻：<span id="clock_time" style="color: #ffffff"> </span>
+    </div>
+
+    <div id="bus_area"  style="color: #00ff00; background-color: #000000; font-family : Courier,'ＭＳ Ｐゴシック',monospace;  font-size: large;">
+    <span id="bus_stop" style="color: #ffffff"> </span>
+    <table>
+    <tr>
+        <td>今度のバス</td><td><span id="bus" style="color: #ffffff"> </span></td>
+        <td>（出発まで・・ <span id ="timeLeft" style="color: #ffffff"> </span>）</td>
+    </tr>
+    <tr><td>次のバス</td><td><span id="nbus" style="color: #ffffff"> </span> </td></tr>
+    <tr><td>その次のバス</td><td><span id="nnbus" style="color: #ffffff"> </span> </td></tr>
+    </table>
+    <br />
+        <div id="btn">
+    <!--
+     ここに時刻表を切り替えるボタンが追加される
+    -->
+        </div>
+    <br />
+    </div>
+
+
+</body>
+
+</html>
